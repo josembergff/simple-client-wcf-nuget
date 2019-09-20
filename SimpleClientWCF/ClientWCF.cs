@@ -1,9 +1,10 @@
-﻿using System;
+﻿using DefaultWebApi.Notifications;
+using System;
 using System.ServiceModel;
 
 namespace SimpleClientWCF
 {
-    public class ClientWCF<T1>
+    public class ClientWCF<T1> : Notification
     {
         private string _url;
         public ClientWCF(string url)
@@ -22,8 +23,10 @@ namespace SimpleClientWCF
 
                 ChannelFactory<T1> channelFactory = new ChannelFactory<T1>(binding, address);
                 return channelFactory.CreateChannel();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
+                AddNotification(ex.Message);
                 return default(T1);
             }
         }
@@ -42,6 +45,7 @@ namespace SimpleClientWCF
             }
             catch (Exception ex)
             {
+                AddNotification(ex.Message);
                 return default(T1);
             }
         }

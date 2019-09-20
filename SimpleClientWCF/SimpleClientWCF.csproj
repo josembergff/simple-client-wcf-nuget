@@ -15,6 +15,7 @@
     <RepositoryUrl>https://github.com/josembergff/simple-client-wcf-nuget</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <NeutralLanguage></NeutralLanguage>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
