@@ -1,2 +1,2 @@
 # simple-client-wcf-nuget
-Simple Client WCF
+Simple client for request WCF Service

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Josemberg Ferreira</Authors>
+    <Company>Josemberg Ferreira</Company>
+    <Description>Simple client for request WCF Service</Description>
+    <Copyright>MIT</Copyright>
+    <PackageTags>client, wcf, request wcfi, tcpclient, httpclient, wcfservice</PackageTags>
+    <PackageReleaseNotes>Primeira versão</PackageReleaseNotes>
+    <PackageIconUrl>https://cdn3.iconfinder.com/data/icons/data-sharing-and-cloud-lineal-style/512/apiprogrammingdevolperinterfaceappcomputer-512.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/josembergff/simple-client-wcf-nuget</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/josembergff/simple-client-wcf-nuget/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/josembergff/simple-client-wcf-nuget</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <NeutralLanguage></NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DefaultWebApi" Version="2.0.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.5.3" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.5.3" />
+  </ItemGroup>
+
+</Project>
